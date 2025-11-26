@@ -1,55 +1,29 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { GlobalContext } from "../context/GlobalContext";
 
-export default function HomePage(){
-    const [productIDs, setProductIDs] = useState([]);
-    const [ereaderIDs, setEreaderIDs] = useState([]);
+export default function HomePage() {
+    const { getProductsByCategory, getProductDetails, products } = useContext(GlobalContext);
     const [ereaders, setEreaders] = useState([]);
-
-
-
-    // all products
+    // get all ereaders with properties
     useEffect(() => {
-        fetch('http://localhost:3001/products')
-        .then(res => res.json())
+        const ids = getProductsByCategory("ereader").map(prod => prod.id);
+
+        Promise.all(ids.map(id => getProductDetails(id)))
         .then(data => {
-            setProductIDs(data);
+            console.log(data)
+            setEreaders(data)
         });
-    }, []);
-
-    // get ereader ids
-    useEffect(() => {
-        if (productIDs.length > 0) {
-            const onlyEreaderIDs = productIDs.filter(prod => prod.category === "ereader").map(prod => prod.id);
-
-            setEreaderIDs(onlyEreaderIDs);
-        }
-    }, [productIDs]);
-
-    useEffect(()=>{
-        getProducts(ereaderIDs)
-    },[ereaderIDs]);
-
-    // get products with all properties 
-    async function getProducts(ids){
-        try{
-            const responses = await Promise.all(ids.map(id => fetch(`http://localhost:3001/products/${id}`)));
-            const json = await Promise.all(responses.map(res => res.json()));
-
-            setEreaders(json.map(data => data.product));
-        }
-        catch(err){
-            console.error(err)
-        }
-    }
+    }, [products]);
 
     return (
         <>
             <div className="container">
-                {ereaders.length > 0 && (ereaders.map(prod => (
-                <div key={prod.id}>
-                    <strong>{prod.title}</strong> — {prod.price}
-                </div>
-                )))}
+                {ereaders.map(prod => (
+                    <div key={prod.id}>
+                    <strong> {prod.title} </strong> — 
+                    <strong> {prod.category} </strong>
+                    </div>
+                ))}
             </div>
         </>
     );
