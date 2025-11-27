@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { GlobalContext } from "../context/GlobalContext";
+import Jumbotron from "../components/Jumbotron";
 
 export default function HomePage() {
     const { getProductsByCategory, getProductDetails, products } = useContext(GlobalContext);
@@ -17,6 +18,7 @@ export default function HomePage() {
 
     return (
         <>
+            <Jumbotron></Jumbotron>
             <div className="container">
                 {ereaders.map(prod => (
                     <div key={prod.id}>
