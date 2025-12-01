@@ -7,6 +7,14 @@ export default function GlobalProvider({ children }) {
   // cache products
   const [productById, setProductById] = useState({}); 
 
+  const [categories, setCategories] = useState([]);
+
+  useEffect(()=>{
+    fetch("http://localhost:3001/categories")
+      .then(res => res.json())
+      .then(data => setCategories(data))
+  },[])
+
   // get all products
   useEffect(() => {
     fetch("http://localhost:3001/products")
@@ -34,13 +42,21 @@ export default function GlobalProvider({ children }) {
     return products.filter(p => p.category === cat);
   }
 
+  async function getProductsByTitle(title){
+    const res = await fetch(`http://localhost:3001/products?search=${title}`);
+    const json = await res.json();
+    return json.slice(0,5);
+  }
+
   return (
     <GlobalContext.Provider
       value={{
         products,
         getProductsByCategory,
         getProductDetails,
-        productById
+        productById,
+        categories,
+        getProductsByTitle
       }}
     >
       {children}

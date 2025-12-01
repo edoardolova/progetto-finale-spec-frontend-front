@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -37,11 +38,11 @@ export default function Header() {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav mx-auto">
                 <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="#">Home</a>
+                    <NavLink to='/' className="nav-link active" aria-current="page" href="#">Home</NavLink>
                 </li>
 
                 <li className="nav-item">
-                    <a className="nav-link" href="#">About us</a>
+                    <NavLink to='/products' className="nav-link" href="#">Prodotti</NavLink>
                 </li>
 
                 <li className="nav-item dropdown">

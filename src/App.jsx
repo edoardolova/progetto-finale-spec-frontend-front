@@ -3,6 +3,7 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import { DefaultLayout } from './layouts/DefaultLayout';
 import HomePage from './pages/HomePage';
 import GlobalProvider from './context/GlobalContext';
+import ProductsPage from './pages/ProductsPage';
 
 function App() {
   return(
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route element={<DefaultLayout/>}>
             <Route path='/' element={<HomePage/>} />
+            <Route path='/products' element={<ProductsPage/>} />
           </Route>
         </Routes>
       </BrowserRouter>
