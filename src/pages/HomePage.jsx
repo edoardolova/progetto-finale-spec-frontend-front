@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { GlobalContext } from "../context/GlobalContext";
 import Jumbotron from "../components/Jumbotron";
 import EreaderCard from "../components/EreaderCard";
+import CompareList from "../components/CompareList";
 
 export default function HomePage() {
     const { products, getProductDetails } = useContext(GlobalContext);
@@ -100,6 +101,8 @@ export default function HomePage() {
                     {latestProducts.map(renderProductCard)}
                 </div>
             </section>
+
+            <CompareList></CompareList>
         </>
     );
 }

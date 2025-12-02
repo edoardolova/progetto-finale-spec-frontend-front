@@ -3,7 +3,7 @@ import "../styles/Jumbotron.css";
 import { useContext, useEffect, useState } from "react";
 
 export default function Jumbotron() {
-    const {getProductsByTitle} = useContext(GlobalContext)
+    const {getProductsByTitle, compareProducts, addCompareProduct} = useContext(GlobalContext)
 
     const [query, setQuery] = useState("");
     const [searchedProducts, setSearchedProducts] = useState([]);
@@ -27,6 +27,11 @@ export default function Jumbotron() {
         fetchData();
     }, [query]);
 
+    function handleSuggestion(prod){
+        addCompareProduct(prod)
+        setQuery('')
+    }
+
 
     return (
         <section className="jumbo">
@@ -43,12 +48,12 @@ export default function Jumbotron() {
                         value={query}
                         onChange={(e) => setQuery(e.target.value)}
                     />
-                    <button type="submit">Confronto</button>
-                    <div class="list-group position-absolute top-100" style={{width:'70%'}}>
+                    <button type="submit" className={compareProducts.length > 0 ? 'd-block' : 'd-none'} >Confronto</button>
+                    <div className="list-group position-absolute top-100" style={{width:'100%'}}>
                         {searchedProducts.map(product =>{
                             return(
                                 <>
-                                    <button onClick={()=> setQuery(product.title)} type="button" class="list-group-item list-group-item-action" aria-current="true">
+                                    <button onClick={()=> handleSuggestion(product)} type="button" className="list-group-item list-group-item-action" aria-current="true">
                                         {product.title}
                                     </button>
                                 

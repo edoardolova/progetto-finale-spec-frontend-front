@@ -9,6 +9,8 @@ export default function GlobalProvider({ children }) {
 
   const [categories, setCategories] = useState([]);
 
+  const [compareProducts, setCompareProducts] = useState([]);
+
   useEffect(()=>{
     fetch("http://localhost:3001/categories")
       .then(res => res.json())
@@ -48,6 +50,20 @@ export default function GlobalProvider({ children }) {
     return json.slice(0,5);
   }
 
+  function addCompareProduct(product){
+    if(compareProducts.length >= 2) {
+      return
+    }
+
+    setCompareProducts([...compareProducts, product])
+  }
+
+  const removeFromCompare = (id) => {
+    setCompareProducts(prev => prev.filter(p => p.id !== id));
+  };
+
+
+
   return (
     <GlobalContext.Provider
       value={{
@@ -56,7 +72,11 @@ export default function GlobalProvider({ children }) {
         getProductDetails,
         productById,
         categories,
-        getProductsByTitle
+        getProductsByTitle,
+        compareProducts,
+        addCompareProduct,
+        removeFromCompare
+      
       }}
     >
       {children}

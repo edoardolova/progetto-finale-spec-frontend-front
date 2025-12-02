@@ -3,6 +3,7 @@ import Filters from "../components/Filters";
 import Jumbotron from "../components/Jumbotron";
 import { GlobalContext } from "../context/GlobalContext";
 import EreaderCard from "../components/EreaderCard";
+import CompareList from "../components/CompareList";
 
 export default function ProductsPage() {
     const { products, getProductDetails } = useContext(GlobalContext);
@@ -95,6 +96,7 @@ export default function ProductsPage() {
                     </div>
                 </div>
             </div>
+            <CompareList></CompareList>
         </>
     );
 }
