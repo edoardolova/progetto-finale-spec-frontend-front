@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { GlobalContext } from "../context/GlobalContext";
 import "../styles/Jumbotron.css";
 import { useContext, useEffect, useState } from "react";
@@ -32,7 +33,6 @@ export default function Jumbotron() {
         setQuery('')
     }
 
-
     return (
         <section className="jumbo">
             <div className="content">
@@ -48,7 +48,14 @@ export default function Jumbotron() {
                         value={query}
                         onChange={(e) => setQuery(e.target.value)}
                     />
-                    <button type="submit" className={compareProducts.length > 0 ? 'd-block' : 'd-none'} >Confronto</button>
+                    {compareProducts.length >0 && (
+
+                        <Link style={{textDecoration:'none'}} to={compareProducts.length === 1 ? `/products/${compareProducts[0].id}` : `/products/${compareProducts[0].id}/${compareProducts[1].id}`}>
+                            <button type="submit" className={compareProducts.length > 0 ? 'd-block' : 'd-none'} >Confronto</button>
+                        
+                        </Link>
+
+                    )}
                     <div className="list-group position-absolute top-100" style={{width:'100%'}}>
                         {searchedProducts.map(product =>{
                             return(

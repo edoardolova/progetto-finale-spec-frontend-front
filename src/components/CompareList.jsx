@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { GlobalContext } from "../context/GlobalContext";
 import '../styles/CompareList.css'
+import { Link } from "react-router-dom";
 
 export default function CompareList() {
     const { compareProducts, removeFromCompare } = useContext(GlobalContext);
@@ -36,7 +37,9 @@ export default function CompareList() {
                         </li>
                     ))}
                 </ul>
-                <button className="btn btn-primary btn-rounded w-100">CONFRONTA</button>
+                <Link to={compareProducts.length === 1 ? `/products/${compareProducts[0].id}` : `/products/${compareProducts[0].id}/${compareProducts[1].id}`}>
+                    <button className="btn btn-primary btn-rounded w-100">CONFRONTA</button>
+                </Link>
             </div>
         </div>
   );
