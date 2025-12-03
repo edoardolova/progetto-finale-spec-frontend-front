@@ -11,6 +11,38 @@ export default function GlobalProvider({ children }) {
 
   const [compareProducts, setCompareProducts] = useState([]);
 
+  const [favorites, setFavorites] = useState(() => {
+    const saved = localStorage.getItem("favorites");
+    return saved ? JSON.parse(saved) : [];
+  });
+
+  // save on ls 
+  useEffect(()=>{
+    localStorage.setItem('favorites', JSON.stringify(favorites))
+  },[favorites])
+
+  // add to favorites
+  function addFavorite(product){
+    setFavorites(prev => {
+      if (prev.some(prod => prod.id === product.id)) {
+        return prev;
+      }
+
+      return [...prev, product];
+    })
+  }
+
+  //remove favorite
+  function removeFavorite(id){
+    setFavorites(prev => prev.filter(prod => prod.id !== id));
+  }
+
+  // check if already favorite
+  function isFavorite(id){
+    return favorites.some(prod => prod.id === id);
+  }
+
+  
   useEffect(()=>{
     fetch("http://localhost:3001/categories")
       .then(res => res.json())
@@ -75,7 +107,11 @@ export default function GlobalProvider({ children }) {
         getProductsByTitle,
         compareProducts,
         addCompareProduct,
-        removeFromCompare
+        removeFromCompare,
+        favorites,
+        addFavorite,
+        removeFavorite,
+        isFavorite,
       
       }}
     >

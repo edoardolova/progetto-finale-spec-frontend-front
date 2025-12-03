@@ -3,7 +3,10 @@ import { GlobalContext } from "../context/GlobalContext";
 import { Link } from "react-router-dom";
 
 export default function EreaderCard({ereader}){
-    const {addCompareProduct} = useContext(GlobalContext)
+    const {addCompareProduct, addFavorite, removeFavorite, isFavorite} = useContext(GlobalContext);
+
+    const isFav = isFavorite(ereader.id);
+
     if (!ereader || !ereader.properties) {
         return null; 
     }
@@ -12,7 +15,15 @@ export default function EreaderCard({ereader}){
         <>
             <div className="col-lg-6 col-12 d-flex">
                 <div class="card mb-3 pt-3 p-3 position-relative" >
-                    <button className="btn-add" onClick={()=>addCompareProduct(ereader)}>+</button>
+                        <div className="card-header-area position-relative">
+                            <button 
+                                className={`btn-fav ${isFav ? 'text-danger' : 'text-secondary'}`} 
+                                onClick={() => isFav ? removeFavorite(ereader.id) : addFavorite(ereader)}
+                            >
+                                <i className="fa-solid fa-heart"></i>
+                            </button>
+                            <button className="btn-add" onClick={()=>addCompareProduct(ereader)}>+</button>
+                        </div>
                     <Link to={`/products/${ereader.id}`} style={{textDecoration:'none'}}>
                         <div class="row g-0">
                             <div class="col-4">
