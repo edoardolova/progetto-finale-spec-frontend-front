@@ -6,6 +6,7 @@ import GlobalProvider from './context/GlobalContext';
 import ProductsPage from './pages/ProductsPage';
 import DetailPage from './pages/DetailPage';
 import ComparePage from './pages/ComparePage';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return(
@@ -13,6 +14,7 @@ function App() {
 
     <GlobalProvider>
       <BrowserRouter>
+      <ScrollToTop></ScrollToTop>
         <Routes>
           <Route element={<DefaultLayout/>}>
             <Route path='/' element={<HomePage/>} />
