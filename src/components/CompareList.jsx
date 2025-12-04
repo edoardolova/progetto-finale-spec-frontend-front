@@ -37,7 +37,7 @@ export default function CompareList() {
                         </li>
                     ))}
                 </ul>
-                <Link to={compareProducts.length === 1 ? `/products/${compareProducts[0].id}` : `/products/${compareProducts[0].id}/${compareProducts[1].id}`}>
+                <Link to={compareProducts.length === 1 ? `/products/${compareProducts[0].id}` : `/products/compare/${compareProducts.map(p => p.id).join('-')}`}>
                     <button className="btn btn-primary btn-rounded w-100">CONFRONTA</button>
                 </Link>
             </div>

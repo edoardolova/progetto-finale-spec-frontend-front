@@ -83,7 +83,7 @@ export default function GlobalProvider({ children }) {
   }
 
   function addCompareProduct(product){
-    if(compareProducts.length >= 2) {
+    if(compareProducts.length >= 5) {
       return
     }
 

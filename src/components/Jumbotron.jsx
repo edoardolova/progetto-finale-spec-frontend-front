@@ -50,7 +50,7 @@ export default function Jumbotron() {
                     />
                     {compareProducts.length >0 && (
 
-                        <Link style={{textDecoration:'none'}} to={compareProducts.length === 1 ? `/products/${compareProducts[0].id}` : `/products/${compareProducts[0].id}/${compareProducts[1].id}`}>
+                        <Link style={{textDecoration:'none'}} to={compareProducts.length === 1 ? `/products/${compareProducts[0].id}` : `/products/compare/${compareProducts.map(p => p.id).join('-')}`}>
                             <button type="submit" className={compareProducts.length > 0 ? 'd-block' : 'd-none'} >Confronto</button>
                         
                         </Link>
