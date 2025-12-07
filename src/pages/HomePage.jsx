@@ -1,8 +1,8 @@
 import { useContext, useEffect, useState } from "react";
 import { GlobalContext } from "../context/GlobalContext";
 import Jumbotron from "../components/Jumbotron";
-import EreaderCard from "../components/EreaderCard";
 import CompareList from "../components/CompareList";
+import ProductCard from "../components/ProductCard";
 
 export default function HomePage() {
     const { products, getProductDetails } = useContext(GlobalContext);
@@ -50,12 +50,7 @@ export default function HomePage() {
             return null
         };
 
-        switch (product.category) {
-            case "ereader":
-                return <EreaderCard ereader={product} key={product.id} />;
-            default:
-                return null;
-        }
+        return <ProductCard product={product} key={product.id} />;
     };
 
     return (

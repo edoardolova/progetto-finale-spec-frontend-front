@@ -16,6 +16,13 @@ export default function ComparePage() {
     const headerRef = useRef(null);
     const [isOverflowing, setIsOverflowing] = useState(false);
 
+
+
+    function checkProductsCategories(products){
+        const firstCat = products[0].category;
+        return products.every(prod => prod.category === firstCat)
+        
+    }
     function getCommonProperties(products) {
         if (!products.length) return [];
 
@@ -51,15 +58,26 @@ export default function ComparePage() {
         load();
     }, [ids]);
 
+
+
     if (!products.length) {
         return <p>LNessun prodotto selezionato...</p>;
     }
 
     const commonProps = getCommonProperties(products);
+    const sameCategory = checkProductsCategories(products);
+
 
     return (
         <div className="compare-page-bg">
-            
+            {!sameCategory && (
+                <div className="container">
+                    <div className="alert alert-warning text-center fw-semibold my-5">
+                        Stai facendo un confronto tra categorie diverse, il che potrebbe dare risultati inaspettati.
+                    </div>
+
+                </div>
+            )}
             {/*product image and name*/}
             <div
                 className={`compare-header ${isOverflowing ? "overflowing" : "centered"}`}

@@ -5,8 +5,8 @@ export default function Footer() {
                 <div className="container">
                     <div className="row gy-4">
 
-                        {/* contattaci */}
-                        <div className="col-lg-3 col-6">
+                        {/* contact us */}
+                        <div className="col-lg-3 col-6 text-center">
                             <h5 className="text-secondary mb-3">CONTATTACI</h5>
                             <ul className="list-unstyled">
                                 <li><a href="#" className="nav-link">Suggerisci un prodotto</a></li>
@@ -15,7 +15,7 @@ export default function Footer() {
                         </div>
 
                         {/* metricly */}
-                        <div className="col-lg-3 col-6">
+                        <div className="col-lg-3 col-6 text-center">
                             <h5 className="text-secondary mb-3">METRICLY</h5>
                             <ul className="list-unstyled">
                                 <li><a href="#" className="nav-link">About us</a></li>
@@ -23,8 +23,8 @@ export default function Footer() {
                             </ul>
                         </div>
 
-                        {/* link utili */}
-                        <div className="col-lg-3 col-6">
+                        {/* links */}
+                        <div className="col-lg-3 col-6 text-center">
                             <h5 className="text-secondary mb-3">LINKS UTILI</h5>
                             <ul className="list-unstyled">
                                 <li><a href="#" className="nav-link">Blog</a></li>
@@ -32,8 +32,8 @@ export default function Footer() {
                             </ul>
                         </div>
 
-                        {/* note legali */}
-                        <div className="col-lg-3 col-6">
+                        {/* legal*/}
+                        <div className="col-lg-3 col-6 text-center">
                             <h5 className="text-secondary mb-3">NOTE LEGALI</h5>
                             <ul className="list-unstyled">
                                 <li><a href="#" className="nav-link">Privacy</a></li>

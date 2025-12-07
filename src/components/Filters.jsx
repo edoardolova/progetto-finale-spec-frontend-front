@@ -4,7 +4,7 @@ import { GlobalContext } from "../context/GlobalContext";
 
 
 
-export default function Filters({onSortChange, priceRange, setPriceRange}){
+export default function Filters({onSortChange, priceRange, setPriceRange, selectedCategory, setSelectedCategory}){
     const {categories} = useContext(GlobalContext)
     return(
         <>
@@ -29,7 +29,7 @@ export default function Filters({onSortChange, priceRange, setPriceRange}){
                         value={priceRange}
                         onChange={(e, newValue) => setPriceRange(newValue)}
                         min={0}
-                        max={1000}
+                        max={2000}
                         valueLabelDisplay="auto"
                     />
 
@@ -41,18 +41,38 @@ export default function Filters({onSortChange, priceRange, setPriceRange}){
             </div>
             <div className="border p-3 rounded shadow mb-3">
                 <h5 className="mb-3"><i className="fa-solid fa-magnifying-glass me-2 text-primary"></i>Cerca categoria...</h5>
-                {categories.map(category =>{
-                    return(
-                        <>
-                            <div class="form-check ms-2">
-                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1"/>
-                                <label class="form-check-label" for="radioDefault1">
-                                    {category.title}
-                                </label>
-                            </div>
-                        </>
-                    )
-                })}
+                {categories.map(category => (
+                    <div className="form-check ms-2" key={category.id}>
+                        <input
+                            className="form-check-input"
+                            type="radio"
+                            name="categoryFilter"
+                            id={`cat-${category.id}`}
+                            value={category.category}
+                            checked={selectedCategory === category.category}
+                            onChange={() => setSelectedCategory(category.category)}
+                        />
+                        <label className="form-check-label" htmlFor={`cat-${category.id}`}>
+                            {category.title}
+                        </label>
+                    </div>
+                ))}
+
+                <div className="form-check ms-2">
+                    <input
+                        className="form-check-input"
+                        type="radio"
+                        name="categoryFilter"
+                        id="cat-all"
+                        value=""
+                        checked={selectedCategory === null}
+                        onChange={() => setSelectedCategory(null)}
+                    />
+                    <label className="form-check-label" htmlFor="cat-all">
+                        Tutte le categorie
+                    </label>
+                </div>
+
             </div>
 
 

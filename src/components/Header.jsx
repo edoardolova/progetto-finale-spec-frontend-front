@@ -1,12 +1,12 @@
-// src/components/Header.jsx
 import { useContext, useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { GlobalContext } from "../context/GlobalContext";
-import FavoritesOffcanvas from "./FavoritesOffcanvas"; // import
+import FavoritesOffcanvas from "./FavoritesOffcanvas";
 
 export default function Header() {
     const { favorites } = useContext(GlobalContext);
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);  
 
     useEffect(() => {
         const handleScroll = () => setIsScrolled(window.scrollY > 100);
@@ -14,11 +14,40 @@ export default function Header() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    useEffect(() => {
+        const navbarCollapse = document.getElementById("navbarNavDropdown");
+        if (!navbarCollapse) return;
+
+        const onShow = () => setIsOpen(true);
+        const onHide = () => setIsOpen(false);
+
+        navbarCollapse.addEventListener("show.bs.collapse", onShow);
+        navbarCollapse.addEventListener("hide.bs.collapse", onHide);
+
+        return () => {
+            navbarCollapse.removeEventListener("show.bs.collapse", onShow);
+            navbarCollapse.removeEventListener("hide.bs.collapse", onHide);
+        };
+    }, []);
+
     return (
         <>
-            <nav className={ "navbar navbar-expand-lg fixed-top " + (isScrolled ? "navbar-dark bg-dark shadow-sm" : "navbar-dark bg-transparent") } >
+            <nav className={"navbar navbar-expand-lg fixed-top " + ( isScrolled || isOpen ? "navbar-dark bg-dark shadow-sm" : "navbar-dark bg-transparent" )}>
                 <div className="container fs-5">
                     <NavLink to="/" className="navbar-brand fs-2 fw-semibold">Metricly</NavLink>
+
+                    <ul className="navbar-nav d-lg-none">
+                        <li className="nav-item">
+                            <button
+                                className="btn btn-outline-light position-relative"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#favoritesOffcanvas"
+                                aria-controls="favoritesOffcanvas"
+                            >
+                                <i className="fa-solid fa-heart"></i> <span className="ms-1">{favorites.length}</span>
+                            </button>
+                        </li>
+                    </ul>
 
                     <button
                         className="navbar-toggler"
@@ -26,7 +55,7 @@ export default function Header() {
                         data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown"
                         aria-controls="navbarNavDropdown"
-                        aria-expanded="false"
+                        aria-expanded={isOpen}
                         aria-label="Toggle navigation"
                     >
                         <span className="navbar-toggler-icon" />
@@ -35,19 +64,10 @@ export default function Header() {
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul className="navbar-nav mx-auto">
                             <li className="nav-item">
-                                <NavLink to="/" className="nav-link" aria-current="page">Home</NavLink>
+                                <NavLink to="/" className="nav-link">Home</NavLink>
                             </li>
-
                             <li className="nav-item">
                                 <NavLink to="/products" className="nav-link">Prodotti</NavLink>
-                            </li>
-
-                            <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Categorie </a>
-                                <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="#">E-reader</a></li>
-                                    <li><a className="dropdown-item" href="#">Altro</a></li>
-                                </ul>
                             </li>
                         </ul>
 
@@ -60,20 +80,7 @@ export default function Header() {
                                     data-bs-target="#favoritesOffcanvas"
                                     aria-controls="favoritesOffcanvas"
                                 >
-                                    <i className="fa-solid fa-heart"></i> <span className="ms-2"> {favorites.length}</span>
-                                </button>
-                            </li>
-                        </ul>
-
-                        <ul className="navbar-nav d-lg-none">
-                            <li className="nav-item">
-                                <button
-                                    className="nav-link btn"
-                                    data-bs-toggle="offcanvas"
-                                    data-bs-target="#favoritesOffcanvas"
-                                    aria-controls="favoritesOffcanvas"
-                                >
-                                    <i className="fa-solid fa-heart"></i> <span className="ms-1"> {favorites.length}</span>
+                                    <i className="fa-solid fa-heart"></i> <span className="ms-2">{favorites.length}</span>
                                 </button>
                             </li>
                         </ul>
