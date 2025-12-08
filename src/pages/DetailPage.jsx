@@ -5,8 +5,10 @@ import '../styles/DetailPage.css'
 
 export default function DetailPage() {
     const { id } = useParams();
-    const { getProductDetails } = useContext(GlobalContext);
+    const { getProductDetails, addFavorite, removeFavorite, isFavorite } = useContext(GlobalContext);
     const [product, setProduct] = useState({});
+
+    const isFav = isFavorite(product.id);
 
     useEffect(() => {
         async function loadDetails() {
@@ -30,6 +32,12 @@ export default function DetailPage() {
 
                 <div className="detail-image-wrapper">
                     <div className="image-box">
+                        <button 
+                            className={`btn-fav ${isFav ? 'text-danger' : 'text-secondary'}`} 
+                            onClick={() => isFav ? removeFavorite(product.id) : addFavorite(product)}
+                        >
+                            <i className="fa-solid fa-heart"></i>
+                        </button>
                         <img src={`/${product.image}`} className="detail-image" alt="" />
                         <span className="detail-price">{product.price}</span>
                     </div>

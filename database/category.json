@@ -1,0 +1,16 @@
+[
+  {
+    "title": "E-reader",
+    "category": "ereader",
+    "id": 1,
+    "createdAt": "2025-11-29T10:36:44.569Z",
+    "updatedAt": "2025-11-29T10:36:44.569Z"
+  },
+  {
+    "title": "Monitor",
+    "category": "monitor",
+    "id": 2,
+    "createdAt": "2025-11-29T10:36:44.569Z",
+    "updatedAt": "2025-11-29T10:36:44.569Z"
+  }
+]

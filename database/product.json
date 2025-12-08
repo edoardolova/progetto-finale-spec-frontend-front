@@ -1,0 +1,1497 @@
+[
+  {
+    "title": "Onyx Boox Note Air 4 C",
+    "category": "ereader",
+    "image": "OnyxBooxNoteAir4C.png",
+    "brand": "Onyx",
+    "releaseYear": 2025,
+    "price": "569 €",
+    "properties": [
+      {
+        "key": "weightGr",
+        "label": "Peso (g)",
+        "type": "number",
+        "value": 430,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-weight-hanging"
+      },
+      {
+        "key": "thicknessMm",
+        "label": "Spessore (mm)",
+        "type": "number",
+        "value": 5.8,
+        "relevant": true
+      },
+      {
+        "key": "widthMm",
+        "label": "Larghezza (mm)",
+        "type": "number",
+        "value": 193,
+        "relevant": true
+      },
+      {
+        "key": "screenSize",
+        "label": "Dimensione Schermo (in)",
+        "type": "number",
+        "value": 10.3,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-expand"
+      },
+      {
+        "key": "resolution",
+        "label": "Risoluzione",
+        "type": "string",
+        "value": "1860 x 2480 px",
+        "relevant": true
+      },
+      {
+        "key": "ppi",
+        "label": "PPI",
+        "type": "number",
+        "value": 300,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-arrow-up-right-dots"
+      },
+      {
+        "key": "ePaper",
+        "label": "Display E-paper",
+        "type": "boolean",
+        "value": true,
+        "relevant": true
+      },
+      {
+        "key": "ramGb",
+        "label": "RAM (GB)",
+        "type": "number",
+        "value": 6,
+        "relevant": true
+      },
+      {
+        "key": "internalStorageGb",
+        "label": "Memoria Interna (GB)",
+        "type": "number",
+        "value": 64,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-database"
+      },
+      {
+        "key": "externalMemorySupported",
+        "label": "Memoria Esterna Supportata",
+        "type": "boolean",
+        "value": true,
+        "relevant": false
+      },
+      {
+        "key": "batteryPowermAh",
+        "label": "Batteria (mAh)",
+        "type": "number",
+        "value": 3700,
+        "relevant": true
+      },
+      {
+        "key": "hasCellularModule",
+        "label": "Modulo Cellulare",
+        "type": "boolean",
+        "value": false,
+        "relevant": true
+      }
+    ],
+    "id": 1,
+    "createdAt": "2025-11-25T15:26:18.363Z",
+    "updatedAt": "2025-11-25T15:26:18.363Z"
+  },
+  {
+    "title": "Onyx Boox Tab Ultra",
+    "category": "ereader",
+    "image": "OnyxBooxTabUltra.png",
+    "brand": "Onyx",
+    "releaseYear": 2022,
+    "price": "677 €",
+    "properties": [
+      {
+        "key": "weightGr",
+        "label": "Peso (g)",
+        "type": "number",
+        "value": 480,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-weight-hanging"
+      },
+      {
+        "key": "thicknessMm",
+        "label": "Spessore (mm)",
+        "type": "number",
+        "value": 6.7,
+        "relevant": true
+      },
+      {
+        "key": "widthMm",
+        "label": "Larghezza (mm)",
+        "type": "number",
+        "value": 185,
+        "relevant": true
+      },
+      {
+        "key": "screenSize",
+        "label": "Dimensione Schermo (in)",
+        "type": "number",
+        "value": 10.3,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-expand"
+      },
+      {
+        "key": "resolution",
+        "label": "Risoluzione",
+        "type": "string",
+        "value": "1404 x 1872 px",
+        "relevant": true
+      },
+      {
+        "key": "ppi",
+        "label": "PPI",
+        "type": "number",
+        "value": 227,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-arrow-up-right-dots"
+      },
+      {
+        "key": "ePaper",
+        "label": "Display E-paper",
+        "type": "boolean",
+        "value": true,
+        "relevant": true
+      },
+      {
+        "key": "ramGb",
+        "label": "RAM (GB)",
+        "type": "number",
+        "value": 4,
+        "relevant": true
+      },
+      {
+        "key": "internalStorageGb",
+        "label": "Memoria Interna (GB)",
+        "type": "number",
+        "value": 128,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-database"
+      },
+      {
+        "key": "externalMemorySupported",
+        "label": "Memoria Esterna Supportata",
+        "type": "boolean",
+        "value": true,
+        "relevant": false
+      },
+      {
+        "key": "batteryPowermAh",
+        "label": "Batteria (mAh)",
+        "type": "number",
+        "value": 6300,
+        "relevant": true
+      },
+      {
+        "key": "hasCellularModule",
+        "label": "Modulo Cellulare",
+        "type": "boolean",
+        "value": false,
+        "relevant": true
+      }
+    ],
+    "id": 2,
+    "createdAt": "2025-11-25T15:29:48.871Z",
+    "updatedAt": "2025-11-25T15:29:48.871Z"
+  },
+  {
+    "title": "Onyx Boox Max Lumi 2",
+    "category": "ereader",
+    "image": "OnyxBooxMaxLumi2.png",
+    "brand": "Onyx",
+    "releaseYear": 2021,
+    "price": "343 €",
+    "properties": [
+      {
+        "key": "weightGr",
+        "label": "Peso (g)",
+        "type": "number",
+        "value": 570,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-weight-hanging"
+      },
+      {
+        "key": "thicknessMm",
+        "label": "Spessore (mm)",
+        "type": "number",
+        "value": 7.9,
+        "relevant": true
+      },
+      {
+        "key": "widthMm",
+        "label": "Larghezza (mm)",
+        "type": "number",
+        "value": 228,
+        "relevant": true
+      },
+      {
+        "key": "screenSize",
+        "label": "Dimensione Schermo (in)",
+        "type": "number",
+        "value": 13.3,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-expand"
+      },
+      {
+        "key": "resolution",
+        "label": "Risoluzione",
+        "type": "string",
+        "value": "1650 x 2200 px",
+        "relevant": true
+      },
+      {
+        "key": "ppi",
+        "label": "PPI",
+        "type": "number",
+        "value": 207,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-arrow-up-right-dots"
+      },
+      {
+        "key": "ePaper",
+        "label": "Display E-paper",
+        "type": "boolean",
+        "value": true,
+        "relevant": true
+      },
+      {
+        "key": "ramGb",
+        "label": "RAM (GB)",
+        "type": "number",
+        "value": 6,
+        "relevant": true
+      },
+      {
+        "key": "internalStorageGb",
+        "label": "Memoria Interna (GB)",
+        "type": "number",
+        "value": 128,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-database"
+      },
+      {
+        "key": "externalMemorySupported",
+        "label": "Memoria Esterna Supportata",
+        "type": "boolean",
+        "value": false,
+        "relevant": false
+      },
+      {
+        "key": "batteryPowermAh",
+        "label": "Batteria (mAh)",
+        "type": "number",
+        "value": 4300,
+        "relevant": true
+      },
+      {
+        "key": "hasCellularModule",
+        "label": "Modulo Cellulare",
+        "type": "boolean",
+        "value": false,
+        "relevant": true
+      }
+    ],
+    "id": 3,
+    "createdAt": "2025-11-25T15:30:19.920Z",
+    "updatedAt": "2025-11-25T15:30:19.920Z"
+  },
+  {
+    "title": "Onyx Boox Volta 3",
+    "category": "ereader",
+    "image": "OnyxBooxVolta3.png",
+    "brand": "Onyx",
+    "releaseYear": 2019,
+    "price": "343 €",
+    "properties": [
+      {
+        "key": "weightGr",
+        "label": "Peso (g)",
+        "type": "number",
+        "value": 160,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-weight-hanging"
+      },
+      {
+        "key": "thicknessMm",
+        "label": "Spessore (mm)",
+        "type": "number",
+        "value": 8.8,
+        "relevant": true
+      },
+      {
+        "key": "widthMm",
+        "label": "Larghezza (mm)",
+        "type": "number",
+        "value": 112,
+        "relevant": true
+      },
+      {
+        "key": "screenSize",
+        "label": "Dimensione Schermo (in)",
+        "type": "number",
+        "value": 6,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-expand"
+      },
+      {
+        "key": "resolution",
+        "label": "Risoluzione",
+        "type": "string",
+        "value": "758 x 1024 px",
+        "relevant": true
+      },
+      {
+        "key": "ppi",
+        "label": "PPI",
+        "type": "number",
+        "value": 212,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-arrow-up-right-dots"
+      },
+      {
+        "key": "ePaper",
+        "label": "Display E-paper",
+        "type": "boolean",
+        "value": true,
+        "relevant": true
+      },
+      {
+        "key": "ramGb",
+        "label": "RAM (GB)",
+        "type": "number",
+        "value": 0.5,
+        "relevant": true
+      },
+      {
+        "key": "internalStorageGb",
+        "label": "Memoria Interna (GB)",
+        "type": "number",
+        "value": 8,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-database"
+      },
+      {
+        "key": "externalMemorySupported",
+        "label": "Memoria Esterna Supportata",
+        "type": "boolean",
+        "value": false,
+        "relevant": false
+      },
+      {
+        "key": "batteryPowermAh",
+        "label": "Batteria (mAh)",
+        "type": "number",
+        "value": 3000,
+        "relevant": true
+      },
+      {
+        "key": "hasCellularModule",
+        "label": "Modulo Cellulare",
+        "type": "boolean",
+        "value": false,
+        "relevant": true
+      }
+    ],
+    "id": 4,
+    "createdAt": "2025-11-25T15:30:32.441Z",
+    "updatedAt": "2025-11-25T15:30:32.441Z"
+  },
+  {
+    "title": "Huawei MatePad Paper",
+    "category": "ereader",
+    "image": "HuaweiMatePadPaper.png",
+    "brand": "Huawei",
+    "releaseYear": 2022,
+    "price": "209 €",
+    "properties": [
+      {
+        "key": "weightGr",
+        "label": "Peso (g)",
+        "type": "number",
+        "value": 360,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-weight-hanging"
+      },
+      {
+        "key": "thicknessMm",
+        "label": "Spessore (mm)",
+        "type": "number",
+        "value": 6.7,
+        "relevant": true
+      },
+      {
+        "key": "widthMm",
+        "label": "Larghezza (mm)",
+        "type": "number",
+        "value": 183,
+        "relevant": true
+      },
+      {
+        "key": "screenSize",
+        "label": "Dimensione Schermo (in)",
+        "type": "number",
+        "value": 10.3,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-expand"
+      },
+      {
+        "key": "resolution",
+        "label": "Risoluzione",
+        "type": "string",
+        "value": "1404 x 1872 px",
+        "relevant": true
+      },
+      {
+        "key": "ppi",
+        "label": "PPI",
+        "type": "number",
+        "value": 227,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-arrow-up-right-dots"
+      },
+      {
+        "key": "ePaper",
+        "label": "Display E-paper",
+        "type": "boolean",
+        "value": true,
+        "relevant": true
+      },
+      {
+        "key": "ramGb",
+        "label": "RAM (GB)",
+        "type": "number",
+        "value": 4,
+        "relevant": true
+      },
+      {
+        "key": "internalStorageGb",
+        "label": "Memoria Interna (GB)",
+        "type": "number",
+        "value": 64,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-database"
+      },
+      {
+        "key": "externalMemorySupported",
+        "label": "Memoria Esterna Supportata",
+        "type": "boolean",
+        "value": true,
+        "relevant": false
+      },
+      {
+        "key": "batteryPowermAh",
+        "label": "Batteria (mAh)",
+        "type": "number",
+        "value": 3575,
+        "relevant": true
+      },
+      {
+        "key": "hasCellularModule",
+        "label": "Modulo Cellulare",
+        "type": "boolean",
+        "value": false,
+        "relevant": true
+      }
+    ],
+    "id": 5,
+    "createdAt": "2025-11-25T15:30:45.928Z",
+    "updatedAt": "2025-11-25T15:30:45.928Z"
+  },
+  {
+    "title": "Amazon Kindle Oasis (2019)",
+    "category": "ereader",
+    "image": "AmazonKindleOasis.png",
+    "brand": "Amazon",
+    "releaseYear": 2019,
+    "price": "213 €",
+    "properties": [
+      {
+        "key": "weightGr",
+        "label": "Peso (g)",
+        "type": "number",
+        "value": 188,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-weight-hanging"
+      },
+      {
+        "key": "thicknessMm",
+        "label": "Spessore (mm)",
+        "type": "number",
+        "value": 8.4,
+        "relevant": true
+      },
+      {
+        "key": "widthMm",
+        "label": "Larghezza (mm)",
+        "type": "number",
+        "value": 141,
+        "relevant": true
+      },
+      {
+        "key": "screenSize",
+        "label": "Dimensione Schermo (in)",
+        "type": "number",
+        "value": 7,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-expand"
+      },
+      {
+        "key": "resolution",
+        "label": "Risoluzione",
+        "type": "string",
+        "value": "1264 x 1680 px",
+        "relevant": true
+      },
+      {
+        "key": "ppi",
+        "label": "PPI",
+        "type": "number",
+        "value": 300,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-arrow-up-right-dots"
+      },
+      {
+        "key": "ePaper",
+        "label": "Display E-paper",
+        "type": "boolean",
+        "value": true,
+        "relevant": true
+      },
+      {
+        "key": "ramGb",
+        "label": "RAM (GB)",
+        "type": "number",
+        "value": 1,
+        "relevant": true
+      },
+      {
+        "key": "internalStorageGb",
+        "label": "Memoria Interna (GB)",
+        "type": "number",
+        "value": 32,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-database"
+      },
+      {
+        "key": "externalMemorySupported",
+        "label": "Memoria Esterna Supportata",
+        "type": "boolean",
+        "value": false,
+        "relevant": false
+      },
+      {
+        "key": "batteryPowermAh",
+        "label": "Batteria (mAh)",
+        "type": "number",
+        "value": 1700,
+        "relevant": true
+      },
+      {
+        "key": "hasCellularModule",
+        "label": "Modulo Cellulare",
+        "type": "boolean",
+        "value": true,
+        "relevant": true
+      }
+    ],
+    "id": 6,
+    "createdAt": "2025-11-25T15:30:59.904Z",
+    "updatedAt": "2025-11-25T15:30:59.904Z"
+  },
+  {
+    "title": "TCL Nxtpaper",
+    "category": "ereader",
+    "image": "TCLNxtpaper.png",
+    "brand": "TCL",
+    "releaseYear": 2019,
+    "price": "224 €",
+    "properties": [
+      {
+        "key": "weightGr",
+        "label": "Peso (g)",
+        "type": "number",
+        "value": 316,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-weight-hanging"
+      },
+      {
+        "key": "thicknessMm",
+        "label": "Spessore (mm)",
+        "type": "number",
+        "value": 7.5,
+        "relevant": true
+      },
+      {
+        "key": "widthMm",
+        "label": "Larghezza (mm)",
+        "type": "number",
+        "value": 204,
+        "relevant": true
+      },
+      {
+        "key": "screenSize",
+        "label": "Dimensione Schermo (in)",
+        "type": "number",
+        "value": 8.9,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-expand"
+      },
+      {
+        "key": "resolution",
+        "label": "Risoluzione",
+        "type": "string",
+        "value": "1440 x 1080 px",
+        "relevant": true
+      },
+      {
+        "key": "ppi",
+        "label": "PPI",
+        "type": "number",
+        "value": 203,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-arrow-up-right-dots"
+      },
+      {
+        "key": "ePaper",
+        "label": "Display E-paper",
+        "type": "boolean",
+        "value": true,
+        "relevant": true
+      },
+      {
+        "key": "ramGb",
+        "label": "RAM (GB)",
+        "type": "number",
+        "value": 4,
+        "relevant": true
+      },
+      {
+        "key": "internalStorageGb",
+        "label": "Memoria Interna (GB)",
+        "type": "number",
+        "value": 64,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-database"
+      },
+      {
+        "key": "externalMemorySupported",
+        "label": "Memoria Esterna Supportata",
+        "type": "boolean",
+        "value": true,
+        "relevant": false
+      },
+      {
+        "key": "batteryPowermAh",
+        "label": "Batteria (mAh)",
+        "type": "number",
+        "value": 5500,
+        "relevant": true
+      },
+      {
+        "key": "hasCellularModule",
+        "label": "Modulo Cellulare",
+        "type": "boolean",
+        "value": true,
+        "relevant": true
+      }
+    ],
+    "id": 7,
+    "createdAt": "2025-11-25T15:31:10.284Z",
+    "updatedAt": "2025-11-25T15:31:10.284Z"
+  },
+  {
+    "title": "PocketBook InkPad Eo",
+    "category": "ereader",
+    "image": "PocketBookInkPadEo.png",
+    "brand": "PocketBook",
+    "releaseYear": 2024,
+    "price": "484 €",
+    "properties": [
+      {
+        "key": "weightGr",
+        "label": "Peso (g)",
+        "type": "number",
+        "value": 470,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-weight-hanging"
+      },
+      {
+        "key": "thicknessMm",
+        "label": "Spessore (mm)",
+        "type": "number",
+        "value": 7,
+        "relevant": true
+      },
+      {
+        "key": "widthMm",
+        "label": "Larghezza (mm)",
+        "type": "number",
+        "value": 191,
+        "relevant": true
+      },
+      {
+        "key": "screenSize",
+        "label": "Dimensione Schermo (in)",
+        "type": "number",
+        "value": 10.3,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-expand"
+      },
+      {
+        "key": "resolution",
+        "label": "Risoluzione",
+        "type": "string",
+        "value": "1860 x 2480 px",
+        "relevant": true
+      },
+      {
+        "key": "ppi",
+        "label": "PPI",
+        "type": "number",
+        "value": 300,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-arrow-up-right-dots"
+      },
+      {
+        "key": "ePaper",
+        "label": "Display E-paper",
+        "type": "boolean",
+        "value": true,
+        "relevant": true
+      },
+      {
+        "key": "ramGb",
+        "label": "RAM (GB)",
+        "type": "number",
+        "value": 4,
+        "relevant": true
+      },
+      {
+        "key": "internalStorageGb",
+        "label": "Memoria Interna (GB)",
+        "type": "number",
+        "value": 64,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-database"
+      },
+      {
+        "key": "externalMemorySupported",
+        "label": "Memoria Esterna Supportata",
+        "type": "boolean",
+        "value": true,
+        "relevant": false
+      },
+      {
+        "key": "batteryPowermAh",
+        "label": "Batteria (mAh)",
+        "type": "number",
+        "value": 4000,
+        "relevant": true
+      },
+      {
+        "key": "hasCellularModule",
+        "label": "Modulo Cellulare",
+        "type": "boolean",
+        "value": false,
+        "relevant": true
+      }
+    ],
+    "id": 8,
+    "createdAt": "2025-11-25T15:31:21.974Z",
+    "updatedAt": "2025-11-25T15:31:21.974Z"
+  },
+  {
+    "title": "Kobo Sage",
+    "category": "ereader",
+    "image": "KoboSage.png",
+    "brand": "Kobo",
+    "releaseYear": 2021,
+    "price": "294 €",
+    "properties": [
+      {
+        "key": "weightGr",
+        "label": "Peso (g)",
+        "type": "number",
+        "value": 241,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-weight-hanging"
+      },
+      {
+        "key": "thicknessMm",
+        "label": "Spessore (mm)",
+        "type": "number",
+        "value": 7.6,
+        "relevant": true
+      },
+      {
+        "key": "widthMm",
+        "label": "Larghezza (mm)",
+        "type": "number",
+        "value": 160,
+        "relevant": true
+      },
+      {
+        "key": "screenSize",
+        "label": "Dimensione Schermo (in)",
+        "type": "number",
+        "value": 8,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-expand"
+      },
+      {
+        "key": "resolution",
+        "label": "Risoluzione",
+        "type": "string",
+        "value": "1440 x 1920 px",
+        "relevant": true
+      },
+      {
+        "key": "ppi",
+        "label": "PPI",
+        "type": "number",
+        "value": 300,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-arrow-up-right-dots"
+      },
+      {
+        "key": "ePaper",
+        "label": "Display E-paper",
+        "type": "boolean",
+        "value": true,
+        "relevant": true
+      },
+      {
+        "key": "ramGb",
+        "label": "RAM (GB)",
+        "type": "number",
+        "value": 4,
+        "relevant": true
+      },
+      {
+        "key": "internalStorageGb",
+        "label": "Memoria Interna (GB)",
+        "type": "number",
+        "value": 32,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-database"
+      },
+      {
+        "key": "externalMemorySupported",
+        "label": "Memoria Esterna Supportata",
+        "type": "boolean",
+        "value": false,
+        "relevant": false
+      },
+      {
+        "key": "batteryPowermAh",
+        "label": "Batteria (mAh)",
+        "type": "number",
+        "value": 1200,
+        "relevant": true
+      },
+      {
+        "key": "hasCellularModule",
+        "label": "Modulo Cellulare",
+        "type": "boolean",
+        "value": false,
+        "relevant": true
+      }
+    ],
+    "id": 9,
+    "createdAt": "2025-11-25T15:31:33.988Z",
+    "updatedAt": "2025-11-25T15:31:33.988Z"
+  },
+  {
+    "title": "PocketBook InkPad Color 2",
+    "category": "ereader",
+    "image": "PocketBookInkPadColor2.png",
+    "brand": "PocketBook",
+    "releaseYear": 2023,
+    "price": "299 €",
+    "properties": [
+      {
+        "key": "weightGr",
+        "label": "Peso (g)",
+        "type": "number",
+        "value": 267,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-weight-hanging"
+      },
+      {
+        "key": "thicknessMm",
+        "label": "Spessore (mm)",
+        "type": "number",
+        "value": 7.9,
+        "relevant": true
+      },
+      {
+        "key": "widthMm",
+        "label": "Larghezza (mm)",
+        "type": "number",
+        "value": 134,
+        "relevant": true
+      },
+      {
+        "key": "screenSize",
+        "label": "Dimensione Schermo (in)",
+        "type": "number",
+        "value": 7.8,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-expand"
+      },
+      {
+        "key": "resolution",
+        "label": "Risoluzione",
+        "type": "string",
+        "value": "1404 x 1872 px",
+        "relevant": true
+      },
+      {
+        "key": "ppi",
+        "label": "PPI",
+        "type": "number",
+        "value": 300,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-arrow-up-right-dots"
+      },
+      {
+        "key": "ePaper",
+        "label": "Display E-paper",
+        "type": "boolean",
+        "value": true,
+        "relevant": true
+      },
+      {
+        "key": "ramGb",
+        "label": "RAM (GB)",
+        "type": "number",
+        "value": 1,
+        "relevant": true
+      },
+      {
+        "key": "internalStorageGb",
+        "label": "Memoria Interna (GB)",
+        "type": "number",
+        "value": 32,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-database"
+      },
+      {
+        "key": "externalMemorySupported",
+        "label": "Memoria Esterna Supportata",
+        "type": "boolean",
+        "value": false,
+        "relevant": false
+      },
+      {
+        "key": "batteryPowermAh",
+        "label": "Batteria (mAh)",
+        "type": "number",
+        "value": 2900,
+        "relevant": true
+      },
+      {
+        "key": "hasCellularModule",
+        "label": "Modulo Cellulare",
+        "type": "boolean",
+        "value": false,
+        "relevant": true
+      }
+    ],
+    "id": 10,
+    "createdAt": "2025-11-25T15:31:42.164Z",
+    "updatedAt": "2025-11-25T15:31:42.164Z"
+  },
+  {
+    "title": "Philips Evnia 49M2C8900L",
+    "category": "monitor",
+    "image": "PhilipsEvnia49M2C8900L.png",
+    "brand": "Philips",
+    "releaseYear": 2024,
+    "price": "799 €",
+    "properties": [
+      {
+        "key": "display",
+        "label": "Tipo di display",
+        "type": "string",
+        "value": "OLED/AMOLED",
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-display"
+      },
+      {
+        "key": "screenSize",
+        "label": "Dimensione Schermo (in)",
+        "type": "number",
+        "value": 49,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-expand"
+      },
+      {
+        "key": "resolution",
+        "label": "Risoluzione",
+        "type": "string",
+        "value": "5120 x 1440 px",
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-braille"
+      },
+      {
+        "key": "ppi",
+        "label": "PPI",
+        "type": "number",
+        "value": 109,
+        "relevant": true
+      },
+      {
+        "key": "frequency",
+        "label": "Frequenza di refresh (Hz)",
+        "type": "number",
+        "value": 144,
+        "relevant": true
+      },
+      {
+        "key": "energyClass",
+        "label": "Classe energetica",
+        "type": "string",
+        "value": "G",
+        "relevant": true
+      },
+      {
+        "key": "brightness",
+        "label": "Luminosità (nit)",
+        "type": "string",
+        "value": 250,
+        "relevant": true
+      },
+      {
+        "key": "contrast",
+        "label": "Rapporto di contrasto",
+        "type": "number",
+        "value": "1.000.000:1",
+        "relevant": true
+      },
+      {
+        "key": "hdmiPort",
+        "label": "Porte HDMI",
+        "type": "number",
+        "value": 2,
+        "relevant": true
+      },
+      {
+        "key": "usbPort",
+        "label": "Port USB",
+        "type": "number",
+        "value": 6,
+        "relevant": true
+      }
+    ],
+    "id": 11,
+    "createdAt": "2025-12-05T12:26:51.101Z",
+    "updatedAt": "2025-12-05T12:26:51.101Z"
+  },
+  {
+    "title": "LG UltraGear 27GP950-B",
+    "category": "monitor",
+    "image": "LGUltraGear27GP950B.png",
+    "brand": "LG",
+    "releaseYear": 2023,
+    "price": "699 €",
+    "properties": [
+      {
+        "key": "display",
+        "label": "Tipo di display",
+        "type": "string",
+        "value": "Nano IPS",
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-display"
+      },
+      {
+        "key": "screenSize",
+        "label": "Dimensione Schermo (in)",
+        "type": "number",
+        "value": 27,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-expand"
+      },
+      {
+        "key": "resolution",
+        "label": "Risoluzione",
+        "type": "string",
+        "value": "3840 x 2160 px",
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-braille"
+      },
+      {
+        "key": "ppi",
+        "label": "PPI",
+        "type": "number",
+        "value": 163,
+        "relevant": true
+      },
+      {
+        "key": "frequency",
+        "label": "Frequenza di refresh (Hz)",
+        "type": "number",
+        "value": 144,
+        "relevant": true
+      },
+      {
+        "key": "energyClass",
+        "label": "Classe energetica",
+        "type": "string",
+        "value": "G",
+        "relevant": true
+      },
+      {
+        "key": "brightness",
+        "label": "Luminosità (nit)",
+        "type": "number",
+        "value": 400,
+        "relevant": true
+      },
+      {
+        "key": "contrast",
+        "label": "Rapporto di contrasto",
+        "type": "string",
+        "value": "1000:1",
+        "relevant": true
+      },
+      {
+        "key": "hdmiPort",
+        "label": "Porte HDMI",
+        "type": "number",
+        "value": 2,
+        "relevant": true
+      },
+      {
+        "key": "usbPort",
+        "label": "Port USB",
+        "type": "number",
+        "value": 2,
+        "relevant": true
+      }
+    ],
+    "id": 12,
+    "createdAt": "2025-12-05T14:54:56.514Z",
+    "updatedAt": "2025-12-05T14:54:56.514Z"
+  },
+  {
+    "title": "Samsung Odyssey G7 32",
+    "category": "monitor",
+    "image": "SamsungOdysseyG732.png",
+    "brand": "Samsung",
+    "releaseYear": 2022,
+    "price": "579 €",
+    "properties": [
+      {
+        "key": "display",
+        "label": "Tipo di display",
+        "type": "string",
+        "value": "VA Curvo",
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-display"
+      },
+      {
+        "key": "screenSize",
+        "label": "Dimensione Schermo (in)",
+        "type": "number",
+        "value": 32,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-expand"
+      },
+      {
+        "key": "resolution",
+        "label": "Risoluzione",
+        "type": "string",
+        "value": "2560 x 1440 px",
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-braille"
+      },
+      {
+        "key": "ppi",
+        "label": "PPI",
+        "type": "number",
+        "value": 92,
+        "relevant": true
+      },
+      {
+        "key": "frequency",
+        "label": "Frequenza di refresh (Hz)",
+        "type": "number",
+        "value": 240,
+        "relevant": true
+      },
+      {
+        "key": "energyClass",
+        "label": "Classe energetica",
+        "type": "string",
+        "value": "G",
+        "relevant": true
+      },
+      {
+        "key": "brightness",
+        "label": "Luminosità (nit)",
+        "type": "number",
+        "value": 350,
+        "relevant": true
+      },
+      {
+        "key": "contrast",
+        "label": "Rapporto di contrasto",
+        "type": "string",
+        "value": "2500:1",
+        "relevant": true
+      },
+      {
+        "key": "hdmiPort",
+        "label": "Porte HDMI",
+        "type": "number",
+        "value": 2,
+        "relevant": true
+      },
+      {
+        "key": "usbPort",
+        "label": "Port USB",
+        "type": "number",
+        "value": 2,
+        "relevant": true
+      }
+    ],
+    "id": 13,
+    "createdAt": "2025-12-05T14:55:33.856Z",
+    "updatedAt": "2025-12-05T14:55:33.856Z"
+  },
+  {
+    "title": "Dell UltraSharp U3223QE",
+    "category": "monitor",
+    "image": "DellUltraSharpU3223QE.png",
+    "brand": "Dell",
+    "releaseYear": 2023,
+    "price": "749 €",
+    "properties": [
+      {
+        "key": "display",
+        "label": "Tipo di display",
+        "type": "string",
+        "value": "IPS Black",
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-display"
+      },
+      {
+        "key": "screenSize",
+        "label": "Dimensione Schermo (in)",
+        "type": "number",
+        "value": 32,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-expand"
+      },
+      {
+        "key": "resolution",
+        "label": "Risoluzione",
+        "type": "string",
+        "value": "3840 x 2160 px",
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-braille"
+      },
+      {
+        "key": "ppi",
+        "label": "PPI",
+        "type": "number",
+        "value": 137,
+        "relevant": true
+      },
+      {
+        "key": "frequency",
+        "label": "Frequenza di refresh (Hz)",
+        "type": "number",
+        "value": 60,
+        "relevant": true
+      },
+      {
+        "key": "energyClass",
+        "label": "Classe energetica",
+        "type": "string",
+        "value": "G",
+        "relevant": true
+      },
+      {
+        "key": "brightness",
+        "label": "Luminosità (nit)",
+        "type": "number",
+        "value": 400,
+        "relevant": true
+      },
+      {
+        "key": "contrast",
+        "label": "Rapporto di contrasto",
+        "type": "string",
+        "value": "2000:1",
+        "relevant": true
+      },
+      {
+        "key": "hdmiPort",
+        "label": "Porte HDMI",
+        "type": "number",
+        "value": 2,
+        "relevant": true
+      },
+      {
+        "key": "usbPort",
+        "label": "Port USB",
+        "type": "number",
+        "value": 3,
+        "relevant": true
+      }
+    ],
+    "id": 14,
+    "createdAt": "2025-12-05T14:55:56.069Z",
+    "updatedAt": "2025-12-05T14:55:56.069Z"
+  },
+  {
+    "title": "ASUS ROG Swift PG32UQX",
+    "category": "monitor",
+    "image": "ASUSROGSwiftPG32UQX.png",
+    "brand": "ASUS",
+    "releaseYear": 2022,
+    "price": "1999 €",
+    "properties": [
+      {
+        "key": "display",
+        "label": "Tipo di display",
+        "type": "string",
+        "value": "Mini LED",
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-display"
+      },
+      {
+        "key": "screenSize",
+        "label": "Dimensione Schermo (in)",
+        "type": "number",
+        "value": 32,
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-expand"
+      },
+      {
+        "key": "resolution",
+        "label": "Risoluzione",
+        "type": "string",
+        "value": "3840 x 2160 px",
+        "relevant": true,
+        "showInCard": true,
+        "iconName": "fa-solid fa-braille"
+      },
+      {
+        "key": "ppi",
+        "label": "PPI",
+        "type": "number",
+        "value": 137,
+        "relevant": true
+      },
+      {
+        "key": "frequency",
+        "label": "Frequenza di refresh (Hz)",
+        "type": "number",
+        "value": 144,
+        "relevant": true
+      },
+      {
+        "key": "energyClass",
+        "label": "Classe energetica",
+        "type": "string",
+        "value": "G",
+        "relevant": true
+      },
+      {
+        "key": "brightness",
+        "label": "Luminosità (nit)",
+        "type": "number",
+        "value": 1400,
+        "relevant": true
+      },
+      {
+        "key": "contrast",
+        "label": "Rapporto di contrasto",
+        "type": "string",
+        "value": "1000000:1",
+        "relevant": true
+      },
+      {
+        "key": "hdmiPort",
+        "label": "Porte HDMI",
+        "type": "number",
+        "value": 2,
+        "relevant": true
+      },
+      {
+        "key": "usbPort",
+        "label": "Port USB",
+        "type": "number",
+        "value": 4,
+        "relevant": true
+      }
+    ],
+    "id": 15,
+    "createdAt": "2025-12-05T14:56:39.102Z",
+    "updatedAt": "2025-12-05T14:56:39.102Z"
+  }
+]
