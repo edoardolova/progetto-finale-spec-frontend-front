@@ -6,6 +6,37 @@ Questo progetto è una **Single Page Application (SPA)** che simula l’esperien
 
 La realizzazione del progetto rappresenta l’esercitazione finale del corso di Web Development.
 
+## 🔌 Backend
+
+Questo progetto frontend comunica con un backend sviluppato come supporto didattico
+durante il corso di Web Development.
+
+Per eseguire correttamente l’applicazione è necessario clonare e avviare anche il repository backend:
+
+https://github.com/edoardolova/progetto-finale-spec-frontend-back.git
+
+### Avvio del backend
+
+1. Clona il repository:
+
+```bash
+git clone https://github.com/edoardolova/progetto-finale-spec-frontend-back.git
+```
+
+2. Installa le dipendenze
+
+```bash
+npm install
+```
+
+3. Avvia il server
+
+```bash
+npm run start
+```
+
+Nota: il backend non è stato sviluppato dall’autore di questo progetto, ma fornito come base dal docente del corso e successivamente adattato.
+
 ## 🧩 Obiettivi del Progetto
 
 L’applicazione permette all’utente di:
@@ -49,3 +80,7 @@ L’applicazione permette all’utente di:
 - Aggiunta e rimozione dei record dai preferiti tramite UI dedicata.
 - Persistenza tramite **localStorage**, così da mantenere i dati anche dopo il refresh.
 - Sezione dedicata alla visualizzazione dei record preferiti.
+
+```
+
+```
